@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+        <title>Hacker News Redesign</title>
+        <script src="app.js" defer></script>
+        <link rel="stylesheet" href="styles.css" /> 
+      </head>
+      <body class = "body_main">
+        <div class = "main-header">
+            <h1 class ="title-h1"> Redesigning a Website: Hacker News</h1>
+            <h2 class ="title-h2">Responsive Redesign</h2>
+        </div>
+        <div class = "flex-container">
+            <p1>
+                This assignment is made to practice the workflow of redesigning a simple website. 
+                This assignment has allowed me to practice the skills necessary to analyze and identify flaws in an existing interface,
+                create low-fidelity and high-fidelity prototypes for various screen sizes, and ultimately build a responsive website based on those prototypes.
+            </p1>
+        </div>
+        <div class = "flex-container">
+            <p1>
+                For this assignment I choose to redesign Hacker News. Hacker News (sometimes abbreviated as HN) is a social news website focusing on computer science and entrepreneurship.
+                In my mind, this Hacker News could be thought as a very niche messageboard reminiscent of early messageboards.
+            </p1>
+        </div>
+
+        <div class = "round-container-small">
+            <p class = "round-text">Please feel free to refer to the website below:</p> 
+            <a href="https://news.ycombinator.com/" style = "margin: 10px; color: paleturquoise;"> Hacker News</a>
+            <p class = "round-text">Redesigned Hacker News Below:</p> 
+            <a href="https://news.ycombinator.com/" style = "margin: 10px; color: paleturquoise;"> Hacker News 2.0</a>
+        </div>
+
+        <div style="display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin : 1em;
+            color: #222f44;
+            font-size: 20px;">
+                <h1 style ="font-size: 40px; color: white; align-items: center;">Identifying Usability Problems</h1>
+            </div>
+
+        <h2 class = "title-h2">Usability</h2> 
+        <div class = "round-container">
+            <ul>
+                <li>
+                    The user may not know the home page contains the most recent, top-voted posts.
+                </li>
+                <li>
+                    The page navigation buttons at the top of the website aren’t very descriptive.
+                </li>
+                    <ul>
+                        <li>
+                            Users may not know what the ‘Ask’ Section holds. Currently, the page holds 'ASK HN' posts which users can post. Questions for other Hacker News users to answer–but this is not apparent before clicking.
+                        </li>
+                        <li>
+                            The same issue arises with the ‘Show’ tab. Upon clicking the user is directed to a page that is made to present 'Show HN' posts. The navigation bar does not make this entirely clear.
+                        </li>
+                    </ul>
+                <li>
+                    The difference between posts on the homepage, ‘Show HN’ posts, and ‘ASK HN’ posts are not clear at a first glance and require the user to navigate all three pages to determine the differences between these kinds of posts.
+                </li>
+                <li>
+                    A user might be confused specifically about how Show HN posts and Regular HN posts differ. This requires the user to navigate through various posts and get an understanding of the purpose of each type of post. 
+                </li> 
+                <li>
+                    The search bar is at the bottom. Some users might default to using CTRL+F in order to find a post. 
+                </li>   
+                <ul>
+                    <li>
+                        The placement of the search bar feels counterintuitive and goes against the widely used pattern of placing a search bar at the top of pages to indicate that content is readily available and accessible.
+                    </li>
+                </ul>
+                <li>
+                    The contrast between the background and small text (website links, time posted, and description sentences at the top of some pages) is very weak. It may be difficult for some users to differentiate between the Light grayish yellow (#f6f6ef) and the light gray text.
+                </li>
+                <li>
+                    The ‘More’ link does not look like it is an interactable button. It just looks like regular text. Some users may completely ignore this feature and find it hard to navigate to further information.
+                </li>
+            </ul>
+        </div>
+
+        <h2 class = "title-h2">Learnability</h2> 
+        <div class = "round-container">
+            <ul>
+                <li>
+                    In order to understand the contents of each page (new, past, comments, ask, show) users must traverse through each page and read the contents of each post to determine the differences. The contents of each page are not entirely clear from the current navigation bar at the top of the website.
+                </li>
+                <li>
+                    It takes time to learn that a search bar exists due to the fact that the current search bar is all the way at the bottom of any page. Some users may not reach the bottom of the page. Therefore, it is as if the search bar does not exist.
+                </li>
+                <li>
+                    Navigating various pages of posts is difficult. For example, if a user were to click ‘More’ at the bottom of the page, it would be unclear what page there are currently on or how to navigate back to a previous page. 
+                </li>
+            </ul>
+        </div>
+
+        <h2 class = "title-h2">Memorability</h2> 
+        <div class = "round-container">
+            <ul>
+                <li>
+                    The website’s interface is relatively simple therefore there are a few actions to remember.
+                </li>
+                    <ul>
+                        <li>
+                            Navigating pages through the top navigation bar
+                        </li>
+                        <li>
+                            Searching posts
+                        </li>
+                        <li>
+                            Upvoting
+                        </li>
+                        <li>
+                            Clicking on links relating to a given post
+                        </li>
+                    </ul>
+                <li>
+                    The hardest thing to remember would be how the posts are organized.
+                </li>
+                    <ul>
+                        <li>
+                            Remember the difference between ‘ASK HN’ vs ‘Show HN’
+                        </li>
+                    </ul>
+                <li>
+                    Accessing older posts is tricky
+                </li>
+                <ul>
+                    <li>
+                        A user must navigate to the ‘old’ page within the navbar but trying to navigate/find the correct post may not be intuitive.
+                    </li>
+                </ul>
+            </ul>
+        </div>
+            <div style="display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin : 1em;
+            color: #222f44;
+            font-size: 20px;">
+                <h1 style ="font-size: 40px; color: white; align-items: center;">Hacker News low-fidelity prototypes</h1>
+            </div>
+
+            <div class="story-container">
+                <div class="story-container2">
+                <img class="story-item" src="./imgs/laptop_lofi.png">
+                <figcaption style = "color: white">Fig. 1 Desktop Prototype</figcaption>
+                </div>
+                <br>
+                <div class="story-container2">
+                <img class="story-item" src="./imgs/tablet_lofi.png">
+                <figcaption style = "color: white">Fig. 2 Tablet Prototype</figcaption>
+                </div>
+                <br>
+                <div class="story-container2">
+                <img class="story-item" src="./imgs/mobile_lofi.png">
+                <figcaption style = "color: white">Fig. 3 Phone Prototype</figcaption>
+                </div>
+            </div>
+
+            <div class = "flex-container" style = "margin-left: 10%;">
+                <p>(Sorry for the messsy handwriting while creating these lofi prototypes I had trouble working in Balasmiq.)</p>
+            </div>
+
+            <h2 class = "title-h2">Notes on Lofi Prototypes</h2> 
+            <div class = "round-container">
+                <p>The changes to Hacker News that were implemented in these lofi prototypes are:</p>
+                <ul>
+                    <li>Moving the search bar to the top of the page in order to make the user aware of this functionality and make the page more learnable</li>
+                    <li>Increasing the font of navigation buttons within the page header</li>
+                    <li>Renaming various navigation buttons in order to make their purpose a bit more clear</li>
+                    <li>Increasing the font of the Post Title </li>
+                    <li>Unrolling fields such as 'user', 'website', 'time since post', 'number of comments'</li>
+                    <li>Moving the number of upvotes next to the upvote button</li>
+                    <li>Making a dedicated 'More' button to replace the original 'More' hyperlink</li>
+                </ul>
+            </div>
+
+            <div class = "round-container">
+                <p>There are still a couple things that aren't perfect within these lofi prototypes:</p>
+                <ul>
+                    <li>The headers vary from device to device. If more time was allocated to redesigning the website it could be possible to create a more versatile header for all devices</li>
+                        <ul>
+                            <li>
+                                Currently the biggest issue is the fact that the header needs space for all navigation buttons within the header.
+                            </li>
+                            <li>
+                                We could possibly address this by having a drop-down navigation menu for all devices (desktop, tablet, & phone); however, this might not be the best choice for all devices.
+                            </li>
+                            <li>
+                                The headers for each interface are a bit different; however, this variation was applied to best fit the device. To remedy this, we could possibly look at accepting a new header design.
+                            </li>
+                        </ul>
+                </ul>
+            </div>
+
+
+            <div style="display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin : 1em;
+            color: #222f44;
+            font-size: 20px;">
+                <h1 style ="font-size: 40px; color: white; align-items: center;">Hacker News high-fidelity prototypes</h1>
+            </div>  
+
+            <div class="story-container">
+                <div class="flex-container">
+                <img class="story-item2" src="./imgs/style_guide.png">
+                <figcaption style = "color: white">Fig. 1 Style Sheet</figcaption>
+                </div>
+                <div class="flex-container">
+                <img class="story-item2" src="./imgs/desktop_hifi.png">
+                <figcaption style = "color: white">Fig. 2 Desktop Prototype</figcaption>
+                </div>
+                <div class="flex-container">
+                <img class="story-item3" src="./imgs/tablet_hihi.png">
+                <figcaption style = "color: white">Fig. 3 Tablet Prototype</figcaption>
+                </div>
+                <div class="flex-container">
+                <img class="story-item4" src="./imgs/phone_hifi.png">
+                <figcaption style = "color: white">Fig. 4 Phone Prototype</figcaption>
+                </div>
+            </div>   
+            
+            <h2 class = "title-h2">Notes on Hifi Prototypes</h2> 
+            <div class = "round-container">
+                <ul>
+                    <li>In order to increase usability we unrolled all fields for a post and simply listed them in a row</li>
+                    <li>The contrast of text and the background are a glaring issue. This prototype tries to fix this by changing the background and text colors</li>
+                </ul>
+            </div>
+
+      </body>
+</html>
